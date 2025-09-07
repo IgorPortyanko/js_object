@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html, body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.clock {
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.clock img {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left center;
+  border-radius: 50%;
+}
+
+.second {
+  width: 37%;
+  height: 3px;
+}
+
+.minute {
+  width: 32%;
+  height: 5px;
+}
+
+.hour {
+  width: 25%;
+  height: 6px;
+}
+
+@media (max-width: 640px) {
+  .clock {
+    width: 90vw;
+    height: 90vw;
+  }
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(46, 45, 45, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__container {
+  width: 350px;
+  height: 200px;
+  padding: 16px;
+  border: 5px solid rgb(14, 196, 96);
+  border-radius: 16px;
+  background-color: rgb(199, 210, 212);
+}
+.modal__input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.modal label {
+  font-size: 18px;
+  line-height: 2;
+}
+.modal__btn {
+  width: 135px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  color: black;
+}
+.modal__btn:hover {
+  background-color: rgb(40, 77, 77);
+  color: white;
+}
+.modal__btn:first-child {
+  margin-right: 26px;
+}
+
+.none {
+  display: none;
+}
+
+.header {
+  padding: 20px 40px;
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 4px;
+  position: fixed;
+  width: 100%;
+}
+.header img {
+  width: 80px;
+  height: 80px;
+}
+.header h1 {
+  font-size: 80px;
+  font-weight: 900;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.main {
+  padding-top: 140px;
+  display: flex;
+}
+.main .car {
+  flex-basis: 50%;
+  text-align: center;
+}
+.main .car__image {
+  margin-bottom: 20px;
+}
+.main .car__image img {
+  width: 400px;
+  border-radius: 12px;
+}
+.main .car__model {
+  font-size: 22px;
+  font-weight: 500;
+}

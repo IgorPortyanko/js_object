@@ -1,0 +1,52 @@
+@use 'importer' as i;
+
+.none{
+    display: none;
+}
+
+.header {
+    padding: 20px 40px;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 4px;
+    position: fixed;
+    width: 100%;
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 80px;
+        font-weight: 900;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
+
+.main {
+    padding-top: 140px;
+    display: flex;
+
+    .car{
+        flex-basis: 50%;
+        text-align: center;
+        &__image{
+            margin-bottom: 20px;
+
+            img{
+                width: 400px;
+                border-radius: 12px;
+            }
+        }
+
+        &__model{
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+}
+

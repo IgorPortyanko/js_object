@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./img/javascript.webp" type="image/webp">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/javascript.webp" alt="Logo">
+            </a>
+
+        </div>
+        <h1>JavaScript</h1>
+    </header>
+    <div class="container">
+        <main class="main">
+            <div class="car">
+                <div class="car__image">
+                    <img src="./img/man.jpg" alt="man">
+                </div>
+                <div class="car__model">
+                    <h4>MAN TGL 12.190 4x2 BL</h4>
+                </div>
+                <div class="car__actions">
+                    <button class="btn btn-1">Інформація про авто</button>
+                    <button class="btn btn-2">Інформація про водіїв</button>
+                    <button class="btn btn-3">Прорахувати</button>
+                </div>
+                <div class="car__out-info">
+
+                </div>
+            </div>
+            <div class="clock">
+                <img src="./img/clock-2.png" alt="clock">
+                <span class="arrow second"></span>
+                <span class="arrow minute"></span>
+                <span class="arrow hour"></span>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal none">
+        <div class="modal__container">
+            <label>
+                Введіть ім'я водія
+                <input type="text" class="modal__input" name="driver">
+            </label>
+            <div class="buttons">
+                <button class="modal__btn">Перевірити</button>
+                <button class="modal__btn">Закрити</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

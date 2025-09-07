@@ -1,0 +1,51 @@
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(46, 45, 45, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    &__container{
+        width: 350px;
+        height: 200px;
+        padding: 16px;
+        border: 5px solid rgb(14, 196, 96);
+        border-radius: 16px;
+        background-color: rgb(199, 210, 212);
+    }
+
+    &__input{
+        width: 300px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    label{
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    &__btn{
+        width: 135px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 8px;
+        color: black;
+
+        &:hover{
+            background-color: rgb(40, 77, 77);
+            color: white;
+        }
+
+        &:first-child{
+            margin-right: 26px;
+        }
+    }
+}
