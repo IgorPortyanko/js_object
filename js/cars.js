@@ -8,7 +8,7 @@ export const cars = {
     drivers: ['Санич', 'Колян', 'Ігор Вікторович'],
     foto: './img/man.jpg',
 
-    getInfo(block) {
+    getInfo() {
         let info = `
             <p>Виробник ${this.brand}</p>
             <p>Модель ${this.model}</p>
@@ -16,6 +16,25 @@ export const cars = {
             <p>Паливний бак ${this.tank_capacity}л</p>
             <p>Витрати палива ${this.average_consumption}л на 100км</p>
         `
-        block.insertAdjacentHTML('beforeend', info)
+        return info
+    },
+
+    verifyDriver(driver) {
+        return this.drivers.includes(driver)
+    },
+
+    addDriver(driver) {
+        this.drivers.push(driver)
+    },
+
+    calculate(distance) {
+        const fuel = distance / 100 * this.average_consumption;
+        const time = distance / 80;
+        const breaks = Math.floor(time / 4);
+        const totalTime = time + breaks;
+        return {
+            fuel: fuel.toFixed(2),
+            totalTime: totalTime.toFixed(2)
+        }
     }
 }

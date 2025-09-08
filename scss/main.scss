@@ -4,6 +4,22 @@
     display: none;
 }
 
+.btn{
+    width: 140px;
+    height: 50px;
+    border-radius: 6px;
+    color: black;
+    display: block;
+    font-size: 18px;
+    background-color: rgb(200, 173, 236);
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+
+    &:hover{
+        background-color: rgb(124, 48, 223);
+        color: aliceblue;
+    }
+}
+
 .header {
     padding: 20px 40px;
     background-color: beige;
@@ -34,6 +50,7 @@
     .car{
         flex-basis: 50%;
         text-align: center;
+
         &__image{
             margin-bottom: 20px;
 
@@ -46,6 +63,22 @@
         &__model{
             font-size: 22px;
             font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        &__actions{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__out-info{
+            font-size: 18px;
+            line-height: 1.6;
+            background-color: rgb(231, 217, 191);
+            border-radius: 20px;
+            padding: 5px;
         }
     }
 }

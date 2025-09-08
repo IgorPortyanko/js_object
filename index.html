@@ -46,15 +46,31 @@
         </main>
     </div>
 
-    <div class="modal none">
+    <div id="drivers" class="modal none">
         <div class="modal__container">
             <label>
                 Введіть ім'я водія
-                <input type="text" class="modal__input" name="driver">
+                <input type="text" class="modal__input driver-input" name="driver">
             </label>
-            <div class="buttons">
-                <button class="modal__btn">Перевірити</button>
-                <button class="modal__btn">Закрити</button>
+            <div class="modal__out driver-out"></div>
+            <div class="modal__buttons">
+                <button class="modal__btn verify-btn">Перевірити</button>
+                <button class="modal__btn close-btn">Закрити</button>
+                <button class="modal__btn add-btn col-2">Добавити водія</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="calc" class="modal none">
+        <div class="modal__container">
+            <label>
+                Введіть відстань у км
+                <input type="number" class="modal__input calc-input" name="distance">
+            </label>
+            <div class="modal__out calc-out"></div>
+            <div class="modal__buttons">
+                <button class="modal__btn calc-btn">Порахувати</button>
+                <button class="modal__btn close-calc-btn">Закрити</button>
             </div>
         </div>
     </div>
