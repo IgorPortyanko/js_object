@@ -21,7 +21,7 @@ const calcOut = document.querySelector('.calc-out');
 
 
 avtoInfoBtn.addEventListener('click', () => {
-    out.innerHTML = !out.innerHTML ? cars.getInfo() : ''
+    out.innerHTML = out.innerHTML.trim() === '' ? cars.getInfo() : ''
 })
 
 driverBtn.addEventListener('click', () => {
