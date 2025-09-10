@@ -40,7 +40,7 @@ verify.addEventListener('click', () => {
     } else{
         driverOut.textContent = 'Водія немає в списку';
     }
-})
+}, true)
 
 addDriver.addEventListener('click', () => {
     const driver = driverInput.value
@@ -68,5 +68,17 @@ calcBtn.addEventListener('click', () => {
     else {
         calcOut.innerHTML = `<p>Час в дорозі складе ${totalTime} годин</p>
                              <p>Витрати пального складуть ${fuel} літрів</p> `
+    }
+})
+
+modalDriver.addEventListener('click', (e) => {
+    if(e.target === modalDriver) {
+        modalDriver.classList.add('none')
+    }
+})
+
+modalCalc.addEventListener('click', (e) => {
+    if(e.target === modalCalc) {
+        modalCalc.classList.add('none')
     }
 })
